@@ -9,22 +9,31 @@
     width: 100%;
     height: 100vh;
     background: rgb(155, 1, 78);
+    background-image: url(./Images/BG.svg);
+    background-size: cover;
     position: relative;
+}
+
+hr {
+    margin-bottom: 20px;
 }
 
 .appBox {
     background-color: white;
     border-radius: 20px;
     width: 50%;
-    height: 50vh;
+    height: auto;
     margin: auto;
     position: absolute;
     top: 20%;
     left: 25%;
+    box-shadow: 5px 5px rgb(109, 1, 55);
 }
 
-h3 {
+h2 {
+    text-align: center;
     margin: 20px;
+    color: rgb(33, 1, 17);
 }
 
 .inputBar {
@@ -40,8 +49,8 @@ h3 {
     background-color: rgb(221, 219, 219);
     border: none;
     border-radius: 20px;
-    padding: 10px;
-    height: 30px;
+    padding: 20px;
+    height: 44px;
     width: 60%;
 }
 
@@ -55,6 +64,55 @@ h3 {
     text-align: center;  
     border-radius: 20px;
     padding: 10px;
+    cursor: pointer;
+    height: 44px;
+    width: 25%;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background: none;
+    border-radius: 20px;
+    border: rgb(155, 1, 78) solid 2px;
+    color: rgb(155, 1, 78);
+    font-size: 18px;
+}
+
+.listBox li {
+    display: block;
+    align-items: center;
+    font-size: 17px;
+    list-style: none;
+    margin-top: 20px;
+    margin-left: 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    left: 30px;
+}
+
+.listBox li::before {
+    content: '';
+    position: absolute;
     height: 30px;
-    width: 20%;
+    width: 30px;
+    background-image: url(./Images/Unchecked.svg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    top: 5px;
+    left:-50px;
+}
+
+li {
+    padding: 10px 0px 10px 0px;
+}
+
+.listBox li.checkedTask {
+    text-decoration: line-through;
+    color: rgb(136, 136, 136);
+}
+
+.listBox li.checkedTask::before {
+    background-image: url(./Images/Checked.svg);
 }

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 8.333px;
+        fill: #9b014e;
+        font-family: Montserrat;
+      }
+    </style>
+  </defs>
+  <text id="x" class="cls-1" transform="translate(3.424 25.731) scale(5.024)">x</text>
+</svg>
