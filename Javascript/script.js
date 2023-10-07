@@ -16,3 +16,12 @@ function addTask (){
     }
     inputBox.value = "";
 }
+
+listBox.addEventListener("click", function(e){
+    if(e.target.tagName === "LI"){
+        e.target.classList.toggle("completed");
+    } 
+    else if(e.target.tagName === "SPAN"){
+        e.target.parentElement.remove();
+    }
+});
