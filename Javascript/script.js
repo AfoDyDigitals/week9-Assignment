@@ -15,13 +15,25 @@ function addTask (){
         li.appendChild(span);
     }
     inputBox.value = "";
+    saveData();
 }
 
 listBox.addEventListener("click", function(e){
     if(e.target.tagName === "LI"){
         e.target.classList.toggle("completed");
+        saveData();
     } 
     else if(e.target.tagName === "SPAN"){
         e.target.parentElement.remove();
+        saveData();
     }
 });
+
+function saveData(){
+    localStorage.setItem("data", listBox.innerHTML);
+}
+
+function showTask(){
+    listBox.innerHTML = localStorage.getItem("data");
+}
+showTask();
