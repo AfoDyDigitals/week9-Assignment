@@ -23,12 +23,12 @@ hr {
 .appBox {
     background-color: white;
     border-radius: 20px;
-    width: 50%;
+    width: 80%;
     height: auto;
     margin: auto;
     position: absolute;
     top: 20%;
-    left: 25%;
+    left: 10%;
     box-shadow: 5px 5px rgb(109, 1, 55);
 }
 
