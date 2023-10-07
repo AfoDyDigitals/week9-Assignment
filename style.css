@@ -11,6 +11,8 @@
     background: rgb(155, 1, 78);
     background-image: url(./Images/BG.svg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     position: relative;
 }
 
@@ -33,7 +35,7 @@ hr {
 h2 {
     text-align: center;
     margin: 20px;
-    color: rgb(33, 1, 17);
+    color: rgb(155, 1, 78);
 }
 
 .inputBar {
@@ -78,20 +80,18 @@ h2 {
     font-size: 18px;
 }
 
-.listBox li {
+ul li {
     display: block;
     align-items: center;
     font-size: 17px;
     list-style: none;
-    margin-top: 20px;
-    margin-left: 50px;
+    margin: 20px 25px 10px 80px;
     user-select: none;
     cursor: pointer;
     position: relative;
-    left: 30px;
 }
 
-.listBox li::before {
+ul li::before {
     content: '';
     position: absolute;
     height: 30px;
@@ -108,11 +108,24 @@ li {
     padding: 10px 0px 10px 0px;
 }
 
-.listBox li.checkedTask {
+ul li.completed {
     text-decoration: line-through;
     color: rgb(136, 136, 136);
 }
 
-.listBox li.checkedTask::before {
+ul li.completed::before {
     background-image: url(./Images/Checked.svg);
+}
+
+ul li span {
+    position: absolute;
+    color: rgb(178, 178, 178);
+    font-size: 20px;
+    right: 0;
+    border: none;
+    text-align: center;
+}
+
+ul li span:hover {
+    color: rgb(155, 1, 78);
 }
